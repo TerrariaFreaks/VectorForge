@@ -16,6 +16,7 @@ function Login() {
       )
 
       console.log(res.data)
+      localStorage.setItem("token", res.data.token);
       navigate("/home")
 
     } catch (error) {

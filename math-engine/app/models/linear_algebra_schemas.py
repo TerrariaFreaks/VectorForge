@@ -6,5 +6,5 @@ class MatrixRequest(BaseModel):
 
 class LinearEquationSolver(BaseModel):
     matrixA: List[List[float]]
-    matrixb: List[float]
+    matrixb: List[List[float]]
     method: str = "auto" # default behaviour
